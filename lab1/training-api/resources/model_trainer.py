@@ -43,5 +43,5 @@ def train(dataset):
     # Do clean up
     os.remove(model_path)
 
-    # Saving model in a given location provided as an env. variable
+    # Saving model in a given us-central1 provided as an env. variable
     return jsonify(text_out), 200

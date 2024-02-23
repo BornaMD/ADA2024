@@ -14,7 +14,7 @@
       "args": [
         "build",
         "-t",
-        "${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/deliveryservice-bq-api:0.0.1",
+        "${_us-central1}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/deliveryservice-bq-api:0.0.1",
         "./lab4/deliveryservice-bq"
       ]
     },
@@ -22,7 +22,7 @@
       "name": "gcr.io/cloud-builders/docker",
       "args": [
         "push",
-        "${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/deliveryservice-bq-api:0.0.1"
+        "${_us-central1}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/deliveryservice-bq-api:0.0.1"
       ]
     },
     {

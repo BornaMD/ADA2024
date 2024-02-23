@@ -5,7 +5,7 @@
       "args": [
         "build",
         "-t",
-        "${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/prediction-api-fs:0.0.1",
+        "${_us-central1}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/prediction-api-fs:0.0.1",
         "./lab1/prediction-api-fs"
       ]
     },    
@@ -14,7 +14,7 @@
       "args": [
         "build",
         "-t",
-        "${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/training-api-fs:0.0.1",
+        "${_us-central1}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/training-api-fs:0.0.1",
         "./lab1/training-api-fs"
       ]
     },
@@ -22,14 +22,14 @@
       "name": "gcr.io/cloud-builders/docker",
       "args": [
         "push",
-        "${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/prediction-api-fs:0.0.1"
+        "${_us-central1}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/prediction-api-fs:0.0.1"
       ]
     },    
    {
       "name": "gcr.io/cloud-builders/docker",
       "args": [
         "push",
-        "${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/training-api-fs:0.0.1"
+        "${_us-central1}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/training-api-fs:0.0.1"
       ]
     }
   ]
