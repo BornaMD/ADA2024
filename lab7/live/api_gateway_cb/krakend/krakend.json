@@ -28,10 +28,10 @@
           },
           "extra_config": {
             "qos/circuit-breaker": {
-              "interval": 60,
+              "interval": 60, // check the circuit breaker every 60ms
               "name": "circuit-breaker-1",
-              "timeout": 40,
-              "max_errors": 1,
+              "timeout": 40, // after 40ms, the circuit breaker will trip
+              "max_errors": 1, // if 1 error occurs, the circuit breaker will trip
               "log_status_change": true
             }
           },
